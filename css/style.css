@@ -1,0 +1,70 @@
+html,body {
+	margin:0;
+	padding:0;
+}
+div,ul,li { 
+	margin:0;
+	padding:0;
+}
+
+.n-container{
+	position: relative;
+	width: 300px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.n-container-2{
+	position: relative;
+	width: 600px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+.n-container-3{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	margin: 0 auto;
+}
+.n-slide-window{
+	position: relative;
+	overflow: hidden;
+}
+.n-slide {
+    position: relative;
+}
+.n-slide > div{
+	float: left;
+}
+.n-prev, .n-next{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	border: none;
+	font-size: 40px;
+	color: #000;
+	cursor: pointer;
+	outline: none;
+	position: absolute;
+	top: 50%;
+	background: #fff;
+}
+.n-prev{
+	left: 0px;
+}
+.n-next{
+	right: 0px;
+}
+.n-prev:after{
+	content: '\2039';
+	position: relative;
+    left: -1px;
+    top: -6px;
+}
+.n-next:after{
+	content: '\203A';
+	position: relative;
+	left: 1px;
+    top: -6px;
+}
